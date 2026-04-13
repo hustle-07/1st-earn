@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FocusFlow | Mindful Meditation & Intentions</title>
+    <meta name="description" content="Find your inner peace with FocusFlow. Mindful intentions, breathing guides, and deep meditation timers.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <!-- Google AdSense Placeholder -->
+    <!-- Replace 'ca-pub-XXXXXXXXXXXXXXXX' with your actual AdSense Publisher ID -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXXX"
+     crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Animated Glass Blobs -->
+    <div class="bg-blob blob-1"></div>
+    <div class="bg-blob blob-2"></div>
+
+    <div class="app-container">
+        <!-- Navigation / Header -->
+        <header class="app-header">
+            <div class="logo-section">
+                <div class="logo-icon"></div>
+                <h1>MindfulFlow</h1>
+            </div>
+            <div class="streak-section">
+                <span class="streak-icon">🧘</span>
+                <span id="streak-count">0</span> Days Zen
+            </div>
+            <button class="btn-premium" id="btn-premium">Go Pro</button>
+        </header>
+
+        <main class="main-layout">
+            <!-- Left Panel: Focus Mode -->
+            <section class="focus-panel">
+                <div class="panel-header">
+                    <h2>Daily Intentions</h2>
+                    <p class="subtitle">Set 3 mindful intentions for a peaceful day. 🌿</p>
+                </div>
+
+                <div class="task-slots" id="task-slots">
+                    <!-- Task Slot 1 -->
+                    <div class="task-slot" data-index="0">
+                        <div class="task-status"></div>
+                        <input type="text" placeholder="Add your first big task..." class="task-input">
+                        <button class="btn-check" title="Mark Complete">✓</button>
+                    </div>
+                    <!-- Task Slot 2 -->
+                    <div class="task-slot" data-index="1">
+                        <div class="task-status"></div>
+                        <input type="text" placeholder="Add your second big task..." class="task-input">
+                        <button class="btn-check" title="Mark Complete">✓</button>
+                    </div>
+                    <!-- Task Slot 3 -->
+                    <div class="task-slot" data-index="2">
+                        <div class="task-status"></div>
+                        <input type="text" placeholder="Add your third big task..." class="task-input">
+                        <button class="btn-check" title="Mark Complete">✓</button>
+                    </div>
+                </div>
+
+                <div class="mood-tracker">
+                    <h3>How's your energy?</h3>
+                    <div class="mood-options">
+                        <button class="mood-btn" data-mood="energetic" title="Energetic">✨</button>
+                        <button class="mood-btn" data-mood="focused" title="Focused">🎯</button>
+                        <button class="mood-btn" data-mood="tired" title="Tired">☕</button>
+                        <button class="mood-btn" data-mood="anxious" title="Anxious">🍃</button>
+                    </div>
+                    <p id="mood-suggestion" class="mood-tip">Select a mood for focus tips.</p>
+                </div>
+            </section>
+
+            <!-- Right Panel: Tools & Stats -->
+            <section class="tools-panel">
+                <!-- Breathing Guide -->
+                <div class="card breathing-card">
+                    <h3>Breathing Guide</h3>
+                    <div class="breathing-display">
+                        <div class="breathing-circle"></div>
+                        <p id="breath-instruction">Breathe In...</p>
+                    </div>
+                </div>
+
+                <!-- Meditation Timer -->
+                <div class="card timer-card">
+                    <h3>Nature Timer</h3>
+                    <div class="timer-display">
+                        <div class="circular-progress">
+                            <span id="timer-text">25:00</span>
+                        </div>
+                    </div>
+                    <div class="timer-controls">
+                        <button id="timer-toggle" class="btn-primary">Start Focus</button>
+                        <button id="timer-reset" class="btn-secondary">Reset</button>
+                    </div>
+                    <div class="timer-modes">
+                        <button class="mode-btn active" data-time="1500">Focus</button>
+                        <button class="mode-btn" data-time="300">Short Break</button>
+                        <button class="mode-btn" data-time="900">Long Break</button>
+                    </div>
+                </div>
+
+                <!-- Soundscapes -->
+                <div class="card sound-card">
+                    <h3>Soundscapes</h3>
+                    <div class="sound-options">
+                        <button class="sound-btn" data-sound="rain">🌧️ Rain</button>
+                        <button class="sound-btn" data-sound="forest">🌲 Forest</button>
+                        <button class="sound-btn" data-sound="waves">🌊 Waves</button>
+                    </div>
+                </div>
+
+                <!-- Ad Placeholder (Monetization Tip) -->
+                <div class="ad-banner">
+                    <p class="ad-label">Advertisement</p>
+                    <div class="ad-content">
+                        <!-- AdSense Unit: Sidebar Responsive -->
+                        <ins class="adsbygoogle"
+                             style="display:block"
+                             data-ad-client="ca-pub-XXXXXXXXXXXXXXXX"
+                             data-ad-slot="1234567890"
+                             data-ad-format="auto"
+                             data-full-width-responsive="true"></ins>
+                        <script>
+                             (adsbygoogle = window.adsbygoogle || []).push({});
+                        </script>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer Ad Unit -->
+        <div class="footer-ad">
+            <ins class="adsbygoogle"
+                 style="display:block"
+                 data-ad-client="ca-pub-XXXXXXXXXXXXXXXX"
+                 data-ad-slot="0987654321"
+                 data-ad-format="horizontal"
+                 data-full-width-responsive="true"></ins>
+            <script>
+                 (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+        </div>
+
+        <!-- Footer -->
+        <footer class="app-footer">
+            <p>&copy; 2026 FocusFlow. Designed for clarity.</p>
+            <div class="footer-links">
+                <a href="#">Privacy</a>
+                <a href="#">Support</a>
+                <a href="#">Contact</a>
+            </div>
+        </footer>
+
+        <!-- Modals -->
+        <div id="premium-modal" class="modal">
+            <div class="modal-content">
+                <span class="close-modal">&times;</span>
+                <h2>Join the Magic 🚀</h2>
+                <p>Support the flow and get some cool extra perks!</p>
+                <ul class="benefit-list">
+                    <li>🌈 Unlimited Sessions</li>
+                    <li>🎨 Fun Custom Themes</li>
+                    <li>💾 Cloud Saving</li>
+                    <li>☕ Support the Dev</li>
+                </ul>
+                <div class="pricing-options">
+                    <div class="price-card popular">
+                        <span class="badge">Best Vibe</span>
+                        <h3>Yearly</h3>
+                        <p class="price">$29/yr</p>
+                        <button class="btn-upgrade">Let's Go!</button>
+                    </div>
+                    <div class="price-card">
+                        <h3>Monthly</h3>
+                        <p class="price">$4.99/mo</p>
+                        <button class="btn-upgrade outline">Select</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
